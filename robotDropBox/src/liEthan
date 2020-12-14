@@ -32,14 +32,13 @@ Uninstall()
 
 Stop()
 {
-    cat "0" > /tmp/$PROJECT_NAME
+    cd $INSTALL_DIR/$PROJECT_NAME
     ./rm_Robot.sh
     ./rm_final.sh
 }
 
 Start()
 {
-    cat "1" > /tmp/$PROJECT_NAME
     cd $INSTALL_DIR/$PROJECT_NAME
     ./load_Robot.sh # this spawns the robot..
     ./final.sh
