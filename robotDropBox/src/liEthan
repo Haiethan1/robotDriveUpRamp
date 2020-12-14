@@ -20,8 +20,8 @@ Install()
     #export PATH=$PATH:$INSTALL_BIN 
     
     echo "PATH=$PATH:/$INSTALL_BIN" >> ~/.bashrc
-
-    clear; source ~/.bashrc;
+    echo "Type in terminal to update path: source ~/.bashrc"
+    #clear; source ~/.bashrc;
 }
 
 Uninstall()
