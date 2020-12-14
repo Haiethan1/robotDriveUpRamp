@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 INSTALL_DIR=/home/user/etc
-PROJECT_NAME=driveUpRamp
+PROJECT_NAME=liEthan
 INSTALL_BIN=/home/user/bin
-BIN_NAME=driveUpRamp
+BIN_NAME=liEthan
 export PATH="$PATH:$INSTALL_DIR"
 
 Install()
@@ -17,7 +17,11 @@ Install()
     # put all install files in etc
     cp -r * $INSTALL_DIR/$PROJECT_NAME/
 
-    export PATH="$PATH:$INSTALL_BIN"
+    #export PATH=$PATH:$INSTALL_BIN 
+    
+    echo "PATH=$PATH:/$INSTALL_BIN" >> ~/.bashrc
+
+    clear; source ~/.bashrc;
 }
 
 Uninstall()
@@ -56,7 +60,7 @@ Help()
     echo ' '
     echo ' '
     echo '---------------------------------------'
-    echo '---------- robotDriveUpRamp -----------'
+    echo '--------------- liEthan ---------------'
     echo '---------------------------------------'
     echo 'install           : Install the program'
     echo 'uninstall         : Removes the project'
