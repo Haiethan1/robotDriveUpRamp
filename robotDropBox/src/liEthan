@@ -50,7 +50,7 @@ Start()
 
 Status()
 {
-    echo $(cat /tmp/$PROJECT_NAME)
+    echo "Good"
 }
 
 Help()
